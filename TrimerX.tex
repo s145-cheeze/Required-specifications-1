@@ -1,0 +1,82 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass[12pt]{jsreport}
+\usepackage[top=15truemm,bottom=15truemm,left=13truemm,right=13truemm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{ascmac}
+\usepackage{fancybox}
+\usepackage[usenames]{color}
+\usepackage{plext}
+\usepackage{comment}
+\usepackage{ulem}
+
+%%赤文字と赤下線
+\newcommand{\ruline}[1]{\textcolor{red}{\underline{\textcolor{black}{#1}}}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+%%改行用コマンド
+\newcommand{\ret}{\\\quad}
+\newcommand{\tret}[1]{\tag{#1}\\}
+\newcommand{\ntret}{\notag\\}
+
+\title{「TrimerX」要求仕様書}
+\author{チーム「ちぃーず」\\05伊藤いちご\ 18金子航\ 24米華真典}
+\date{}
+
+
+\begin{document}
+\maketitle
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\setcounter{page}{1}
+
+\chapter{概要}
+本ソフト「TrimerX」は試験の答案やアンケートの集計をするための，画像のトリミングを主としたものです．トリミングしたものをまとめて見ることや答案の点数を入力・集計して平均点を計算することが可能です．
+\chapter{動作・開発環境}
+\begin{itemize}
+    \item Python3.6.4
+    \item PyQt5.6.2
+    \item OpenCV
+\end{itemize}
+
+\chapter{ソフトウェアの構成}
+本ソフトのトリミング機能は大きく分けて2種類になります．
+
+用途に合わせてその機能を使い分けることによってデータの集計を円滑に行うことが可能です．
+\begin{enumerate}
+    \item トリミング
+    \item データビュー
+    \item データ入力・集計
+    \item 画像の読み込み
+\end{enumerate}
+
+\chapter{各機能の詳細}
+
+
+\section{トリミング}
+基本的なトリミング2種類を行えます.
+
+\begin{enumerate}
+    \item 定型トリミング \\
+    主にアンケート用紙などの，大量のデータに対して位置を設定し連続的にトリミングを行います.
+    切り取ったデータは種類ごとに同じファイルにまとめられ「データビュー」にて閲覧が可能となります.
+    \item 自由トリミング
+    主に自由記述型のテキストや解答用紙などに対して機能します.
+    各解答に対しておおよその位置をマウスポインターによって指定することで,指定した位置に対して適切なトリミングを行います.
+    一枚のプリントに対して連続的に位置を指定することができ,指定した順番によってファイル名も設定されます.
+
+\end{enumerate}
+
+\section{データビュー}
+データが種類ごとに分別されおり，閲覧することが可能です．
+\section{データ入力・集計}
+テストの解答に対して，問いごとに点数の入力を行えます．入力したデータは【形式未定】ファイルに出力され，平均点，合計点などの集計が可能です．
+\section{画像の読み込み}
+画像ファイル(.jpg)の読み込みはファイル毎に行われ，存在しているファイルによって属性が割り当てられます.
+
+\newpage
+\end{document}
