@@ -1,6 +1,6 @@
 %%This is a very basic article template.
 %%There is just one section and two subsections.
-\documentclass[12pt]{jsarticle}
+\documentclass[12pt]{jsreport}
 \usepackage[top=15truemm,bottom=15truemm,left=13truemm,right=13truemm]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -21,6 +21,7 @@
 
 
 \renewcommand{\thesection}{第\arabic{section}章}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
 
 \title{「TrimerX」要求仕様書}
 \author{チーム「ちぃーず」\\05伊藤いちご\ 18金子航\ 24米華真典}
@@ -43,10 +44,11 @@
 \newpage
 
 \section{動作・開発環境}
+本章では開発環境に述べる，開発環境は以下の通りである．
 \begin{itemize}
     \item Python3.6.4
     \item PyQt5.6.2
-    \item OpenCV
+    \item OpenCV3.4.1
 \end{itemize}
 
 \newpage
@@ -66,6 +68,7 @@
 \newpage
 
 \section{各機能の詳細}
+本章では各機能の詳細を以下に述べる．
 
 \subsection{トリミング}
 基本的なトリミング2種類を行えます.
