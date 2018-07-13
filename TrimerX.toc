@@ -1,8 +1,14 @@
 \contentsline {section}{\numberline {第1章}概要}{1}
 \contentsline {section}{\numberline {第2章}動作・開発環境}{2}
+\contentsline {subsection}{\numberline {2.1}開発環境}{2}
+\contentsline {subsection}{\numberline {2.2}動作環境}{2}
 \contentsline {section}{\numberline {第3章}ソフトウェアの構成}{3}
 \contentsline {section}{\numberline {第4章}各機能の詳細}{4}
-\contentsline {subsection}{\numberline {4.1}トリミング}{4}
-\contentsline {subsection}{\numberline {4.2}データビュー}{4}
-\contentsline {subsection}{\numberline {4.3}データ入力・集計}{4}
-\contentsline {subsection}{\numberline {4.4}画像の読み込み}{4}
+\contentsline {subsection}{\numberline {4.1}メインウィンドウ}{4}
+\contentsline {subsection}{\numberline {4.2}トリミング}{4}
+\contentsline {subsubsection}{定型トリミング}{4}
+\contentsline {subsubsection}{自由トリミング}{4}
+\contentsline {subsection}{\numberline {4.3}データビュー}{5}
+\contentsline {subsection}{\numberline {4.4}データ入力・集計}{5}
+\contentsline {subsection}{\numberline {4.5}画像の読み込み}{5}
+\contentsline {paragraph}{改変履歴}{6}
